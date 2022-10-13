@@ -1,18 +1,56 @@
 nav{
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
-    margin-left: auto;
-    margin-right: auto;
+    background: #AFD9D6;
+    padding: 2rem 0;
+    margin: 0 auto;
+    height: 2em;
     width: 85%;
+    display: flex;
+    justify-content: flex-end;
 }
-nav a{
-    color: white;
+p{
+    font-family: "Montserrat" , sans-serif
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+h3{
+    font-family: "Montserrat";
+    font-size: smaller;
+}
+nav a {
+    color: #5B4934;
+    position: relative;
+    padding: 1em;
+    transition: all .5s ease-in;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 a:hover{
-    color: aqua;
-    transition: all .5s ease-in;
+    color: #E29578;
+}
+a.active {
+    color: #E29578;
+    text-decoration: underline;
+}
+details {
+    background: #F8E7E1;
+    padding: 0.5rem;
+    width: 90%;
+    font-family: "Montserrat";
+    font-size: small;
+    align-items: center;
+}
+details summary {
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 70%;
+    font-size: medium;
+}
+.small {
+    font-size: 85%;
+    font-weight: 300;
 }
 img{
     display: block;
@@ -20,30 +58,49 @@ img{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
+    padding: 1em;
 }
 section {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 2rem;
-    max-width: 768px;
+    max-width: 80%;
     margin: 2rem auto;
+    padding-right: 2rem;
     box-shadow: 1px 1px 16px rgba(0,0,0,.25);
     box-shadow: -1px -1px 16px rgba(0,0,0,.25);
     box-shadow: 1px -1px 16px rgba(0,0,0,.25);
     box-shadow: -1px 1px 16px rgba(0,0,0,.25);
 }
-button {
-    border: 2px solid #006D77;
-    background-color: #AFD9D6;
-    font-size: 120%;
-    padding: 1rem 2rem;
+.image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+section a {
+    border: 2px solid #AFD9D6;
+    background-color: white;
+    font-family: "Montserrat";
+    font-size: 85%;
+    padding: 1rem 1rem;
     border-radius: 100px;
     transition: all .5s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: auto;
+    margin-bottom: 1rem;
 }
-button:hover {
-    border-color: #AFD9D6;
-    background-color: transparent;
+section a:hover {
+    border-color: transparent;
+    background-color: #AFD9D6;
+    cursor: pointer;
+    color: black;
 }
-.achilles button {
-    border: 2px solid red;
+.gr {
+    text-decoration: none;
+    color: black;
+}
+.gr:hover{
+    border-color: transparent;
+    background-color: #AFD9D6;
+    cursor: pointer;
 }
